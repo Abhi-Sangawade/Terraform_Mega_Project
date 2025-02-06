@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "web" {
-  ami           = "ami-0c55b159cbfafe1f0"  # Amazon Linux 2 AMI (Check for the latest AMI)
+  ami           = "ami-085ad6ae776d8f09"  # Amazon Linux 2 AMI (Check for the latest AMI)
   instance_type = "t2.micro"              # Free-tier eligible
   key_name      = "database.pem"         # Replace with your actual key pair name
 
