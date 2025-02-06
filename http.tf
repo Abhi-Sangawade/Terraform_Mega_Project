@@ -1,13 +1,13 @@
 provider "aws" {
-  region = "us-east-1" # Change to your preferred AWS region
+  region = "us-east-1" 
 }
 
 resource "aws_instance" "web" {
-  ami           = "ami-085ad6ae776d8f09"  # Amazon Linux 2 AMI (Check for the latest AMI)
-  instance_type = "t2.micro"              # Free-tier eligible
-  key_name      = "database.pem"         # Replace with your actual key pair name
+  ami           = "ami-01816d07b1128cd2d"  
+  instance_type = "t2.micro"              
+  key_name      = "database"      
 
-  security_groups = [aws_security_group.web_sg.name]  # Attach security group
+  security_groups = [aws_security_group.web_sg.name]  
 
   user_data = <<-EOF
     #!/bin/bash
