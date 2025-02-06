@@ -1,4 +1,4 @@
-resource "aws_instance" "web" {
+resource "aws_instance" "my_terraform" {
   ami           = var.ami_id
   instance_type = var.instance_type
   key_name      = var.key_name

@@ -1,4 +1,6 @@
-
+/*provider "aws" {
+  region = "us-east-1" 
+}
 
 resource "aws_instance" "web" {
   ami           = "ami-01816d07b1128cd2d"  
@@ -46,3 +48,4 @@ resource "aws_security_group" "web_sg" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 }
+*/
