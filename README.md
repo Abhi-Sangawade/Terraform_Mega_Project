@@ -3,42 +3,6 @@
 ## Overview
 This Terraform project is designed to manage infrastructure across multiple environments, including **Development, Quality Assurance (QA), and Production**. Each environment is structured separately to ensure isolation and better management.
 
-## Project Structure
-terraform-project/
-├── environments/
-│   ├── development/
-│   │   ├── main.tf
-│   │   ├── variables.tf
-│   │   ├── outputs.tf
-│   │   ├── provider.tf
-│   ├── qa/
-│   │   ├── main.tf
-│   │   ├── variables.tf
-│   │   ├── outputs.tf
-│   │   ├── provider.tf
-│   ├── production/
-│   │   ├── main.tf
-│   │   ├── variables.tf
-│   │   ├── outputs.tf
-│   │   ├── provider.tf
-├── modules/
-│   ├── ec2/
-│   │   ├── main.tf
-│   │   ├── variables.tf
-│   │   ├── outputs.tf
-│   ├── s3/
-│   │   ├── main.tf
-│   │   ├── variables.tf
-│   │   ├── outputs.tf
-│   ├── dynamodb/
-│   │   ├── main.tf
-│   │   ├── variables.tf
-│   │   ├── outputs.tf
-├── terraform.tfvars
-├── backend.tf
-├── README.md
-
-
 ## Key Components
 ### 1. **Environments**
 Each environment (Development, QA, Production) has its own directory containing:
